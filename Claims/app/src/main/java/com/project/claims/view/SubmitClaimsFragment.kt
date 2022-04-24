@@ -64,6 +64,7 @@ class SubmitClaimsFragment : Fragment() {
             @SuppressLint("SetTextI18n")
             override fun onItemSelected(parent:AdapterView<*>, view:View, pos:Int, id:Long) {
               binding.layoutDynamic.removeAllViews()
+              binding.expense.setText("")
               val claimtypedetail : JSONArray = (dataMap.get(binding.spinnerClaims.selectedItem.toString())!!)
               for(i in 0..claimtypedetail.length()-1){
                   val claimField = claimtypedetail.getJSONObject(i).getJSONObject("Claimfield")
@@ -137,6 +138,8 @@ class SubmitClaimsFragment : Fragment() {
                         }
                     }
                 if(list.size > 0) {
+                    textviewLabel.visibility = View.VISIBLE
+                    dependentSpinner.visibility = View.VISIBLE
                     dependentSpinner.adapter = ArrayAdapter<IdName>(requireContext(), androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, list)
                 }else{
                     textviewLabel.visibility = View.GONE
