@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<TextView
+    style="@style/textViewStyle"
+    android:id="@+id/textview_label"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+</layout>

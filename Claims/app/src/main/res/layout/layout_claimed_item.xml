@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/claim_type"
+        android:text="@string/claim_type"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        style="@style/textViewStyle"/>
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/claim_type_data"
+        app:layout_constraintStart_toEndOf="@id/claim_type"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textViewStyle"/>
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/claim_date"
+        android:text="@string/claim_date"
+        app:layout_constraintTop_toBottomOf="@id/claim_type"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        style="@style/textViewStyle"/>
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/claim_date_data"
+        app:layout_constraintTop_toBottomOf="@id/claim_type"
+        app:layout_constraintStart_toEndOf="@id/claim_date"
+        style="@style/textViewStyle"/>
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/expense_amt"
+        android:text="@string/expense_amount"
+        app:layout_constraintTop_toBottomOf="@id/claim_date"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        style="@style/textViewStyle"/>
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/expense_amt_data"
+        app:layout_constraintTop_toBottomOf="@id/claim_date"
+        app:layout_constraintStart_toEndOf="@id/expense_amt"
+        style="@style/textViewStyle"/>
+    <TextView
+        android:id="@+id/view_more"
+        android:text="@string/view_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/claim_date"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        style="@style/textViewStyle"
+        app:drawableEndCompat="@drawable/ic_dropdown" />
+
+        <View
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expense_amt_data"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

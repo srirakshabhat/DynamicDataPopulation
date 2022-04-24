@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Claims</string>
+    <string name="submit">Submit</string>
+    <string name="add_claims">Add Claims</string>
+    <string name="claim_date">Claim Date :</string>
+    <string name="select_date">Select Date</string>
+    <string name="add_claim_item">Add claim item</string>
+    <string name="expense">Expense</string>
+    <string name="claim_type">Claim type :</string>
+    <string name="expense_amount">Expense Amount -</string>
+    <string name="view_more">View More</string>
+
+</resources>
